@@ -1,0 +1,342 @@
+header {
+    background-color: rgb(42, 43, 41);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+  }
+  .logo-name {
+    color: white;
+    margin: 0;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    transition: color 0.3s linear;
+  }
+
+  .header-logo {
+    display: flex;
+  }
+
+  .logo-name:hover {
+    color: rgb(239, 95, 11);  
+  }
+
+  .header-line {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container {
+    margin: 0px 100px;
+  }
+
+  .nav-item {
+    color: rgb(255, 255, 255);  
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 25px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    transition: color 0.3s linear;
+  }
+
+  .nav-item:hover {
+    color: rgb(239, 95, 11);  
+  }
+
+  .nav-item--active {
+    color: rgb(239, 95, 11);  
+  }
+  .nav-item--active::before {
+    color: rgb(239, 95, 11);  
+  }
+  .cart {
+    position: relative;
+    display: flex;
+    padding-right: 10px;
+    height: 55px;
+    h1 {
+      position: absolute;
+      top: 15px;
+      left: 32px;
+      font-size: 16px;
+    }
+  }
+  .cart-img {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  .num {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+  }
+  .phone-text {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #fff;
+  }
+  .phone-holder {
+    display: flex;
+    align-items: center;
+  }
+  button {
+    background: rgb(198, 80, 11);
+    width: 157px;
+    height: 47px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 18px;  
+    transition: 0.3s linear; 
+    border-radius: 20px;
+  }
+  button:hover {
+    background-color: #764c29;
+  }
+  .header-title {
+    color: #D67E35;
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 50px;
+    margin-top: 200px;
+    text-align: center;
+    position: absolute;
+    width: 556px;
+  }
+  .header-subtitle {
+    font-size: 80px;
+    font-family: 'Tinos', serif;
+  }
+  .header-down {
+    position: relative;
+    left: 0px;
+  }
+  .header-suptitle {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .header-suptitle:after {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 2px;
+    background-color:  #C4C4C4;
+    top: 163px;
+    left: 120px;
+  }
+  .header-suptitle::before {
+    position: absolute;
+    content: '';
+    width: 61px;
+    height: 2px;
+    background-color:  #C4C4C4;
+    top: 163px;
+    left: 375px;
+  }
+
+
+  .overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4 );
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-2 {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    height: 570px;
+    width: 500px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+
+}
+
+.modal-2.active {
+    transform: scale(1);
+}
+
+  .form-cart {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    h2 {
+        margin-top: 40px;
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+    }
+    input {
+      position: relative;
+        display: flex;
+        font-size: 20px;
+        border: 1px solid #F3F3F3;
+        border-radius: 10px;
+        display: flex;
+        background-color: #ffffff;
+        margin: 25px 20px;
+  }
+  input + span {
+    padding-right: 30px;
+  }
+  
+  input:invalid + span::after {
+    position: absolute;
+    content: "✖";
+    padding-left: 5px;
+    top: 419px;
+    left: 465px;
+  }
+  
+  input:valid + span::after {
+    position: absolute;
+    content: "✓";
+    top: 419px;
+    left: 465px;
+  }
+    .card-btn {
+        margin-left: 170px;
+        margin-top: 25px;
+        background: rgb(198, 80, 11);
+        width: 100px;
+        height: 40px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Roboto';
+        font-style: italic;
+        padding: 5px 5px;  
+        border-radius: 10px;
+        transition: 0.3s linear; 
+    }
+    button:hover {
+        background-color: #764c29;
+    }
+}
+
+.form-cart-success-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+      color: rgb(198, 80, 11);
+      font-size: 25px;
+      font-family: 'Roboto';
+      font-style: italic;
+      font-weight: 700;
+  }
+  img {
+      margin: 75px 0;
+  }
+}
+
+.mobile_btn {
+  color: white;
+  font-size: 25px;
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  left: 100px;
+  top: 46px;
+  z-index: 20;
+}
+
+
+
+@media (max-width: 1250px) {
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .mobile_btn {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(42, 43, 41);
+    z-index: 20;
+    transition: Left 1s;
+  }
+  .nav-item {
+    margin-bottom: 45px;
+    font-size: 25px;
+  }
+
+  .header-line {
+    display: flex;
+  }
+  .logo-name {
+    display: none;
+  }
+  .active {
+    left: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  button {
+    background: rgb(198, 80, 11);
+    width: 80px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px 14px;  
+    transition: 0.3s linear; 
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .header-line {
+    width: 220px;
+    margin-left: 50px;
+    justify-content: space-between;
+    .header-logo{
+      display: none;
+    }
+  }
+  .mobile_btn {
+    display: block;
+    cursor: pointer;
+    top: 50px;
+    left: 40px;
+  }
+}

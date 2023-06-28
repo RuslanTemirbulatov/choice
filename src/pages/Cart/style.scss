@@ -1,0 +1,331 @@
+.cart-title {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+}
+
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 70vh;
+    img {
+        border-radius: 10px;
+    }
+}
+
+.cart-item {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 550px;
+    margin-left: 200px;
+
+}
+
+.cart-item-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-left: 30px;
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+    }
+    p {
+        font-size: 13px;
+        font-family: 'Roboto';
+        font-style: italic;
+    }
+}
+
+.cart-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    button {
+      background: rgb(198, 80, 11);
+      width: 100px;
+      height: 40px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Roboto';
+      font-style: italic;
+      padding: 5px 5px;  
+      border-radius: 10px;
+      transition: 0.3s linear;
+    }
+    & button:hover {
+        background-color: #764c29;
+    }
+    h2 {
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+    b {
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+    }
+}
+
+.cart-subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-suptitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        cursor: pointer;
+    }
+}
+
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4 );
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    height: 650px;
+    width: 500px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+
+}
+
+.modal.active {
+    transform: scale(1);
+
+
+}
+
+.form-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: rgb(198, 80, 11);
+        font-size: 20px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+    }
+    input {
+        display: flex;
+        font-size: 20px;
+        border: 1px solid #F3F3F3;
+        border-radius: 10px;
+        display: flex;
+        background-color: #ffffff;
+        margin: 10px 20px;
+    }
+    .data-card {
+        ::-webkit-input-placeholder {
+            text-align:center;
+            }
+            
+            :-moz-placeholder { /* Firefox 18- */
+               text-align:center;  
+            }
+            
+            ::-moz-placeholder {  /* Firefox 19+ */
+               text-align:center;  
+            }
+            
+            :-ms-input-placeholder {  
+               text-align:center; 
+            }
+        
+    }
+    button {
+        margin-left: 170px;
+        margin-top: 50px;
+        background: rgb(198, 80, 11);
+        width: 100px;
+        height: 90px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Roboto';
+        font-style: italic;
+        padding: 5px 5px;  
+        border-radius: 10px;
+        transition: 0.3s linear; 
+    }
+    button:hover {
+        background-color: #764c29;
+    }
+    p {
+        text-align: start;
+        padding-left: 20px;
+    }
+}
+
+.data-card {
+    display: flex;
+    justify-content: center;
+    input {
+        width: 70px;
+    }
+}
+
+.form-cart-success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 550px;
+    h1 {
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+    }
+    img {
+        margin: 50px 0;
+    }
+}
+
+.cart-btn-menu {
+    background: rgb(198, 80, 11);
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-style: italic;
+    padding: 7px;  
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.cart-zero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: rgb(198, 80, 11);
+        font-size: 25px;
+        font-family: 'Roboto';
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .cart-item {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 400px;
+        margin-left: 200px;
+    
+    }
+    .cart-item-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 20px;
+        h2 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+        }
+        p {
+            font-size: 9px;
+            font-family: 'Roboto';
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .cart-item {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 400px;
+        margin-left: 100px;
+    
+    }
+}
+
+
+@media (max-width: 550px) {
+    .cart-item {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 250px;
+        margin-left: 100px;
+    
+    }
+    .cart-item-desc {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-left: 15px;
+        h2 {
+            font-size: 13px;
+            margin-bottom: 8px;
+            font-family: 'Roboto';
+            font-style: italic;
+            font-weight: 700;
+        }
+        p {
+            font-size: 7px;
+            font-family: 'Roboto';
+            font-style: italic;
+        }
+    }
+    .cart-subtitle {
+        b {
+            font-size: 20px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    }
+}
